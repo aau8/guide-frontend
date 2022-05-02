@@ -1,0 +1,65 @@
+// ================ Colors Start ================
+// Текст
+$text-main: #333;
+$text-second: #858585;
+$accent: #D86B6B;
+
+// Фирменные цвета
+$firm-light: #fff;
+$firm-dark: #292831;
+$firm-accent: #328AE6;
+
+// Линии интерфейса
+// $interface-dark: #454352;
+// $interface-light: #D0D9E1;
+
+// Задний фон разделов
+$frame-bg: #FAFAFA;
+
+// Обводка
+$border-light: #EFEFEF;
+
+// Иконки
+$icon-dark: #5C5C5C;
+
+$error: #D86B6B;
+$success: #6BD8AA;
+
+// Цвета кнопок в файле 'scss/elements/button.scss'
+// ================ Colors End ================
+
+
+// ================ Shadow Start ================
+// $shadow-orange: 0px 43px 80px rgba(3, 8, 17, 0.04), 0px 17.9644px 33.4221px rgba(3, 8, 17, 0.0287542), 0px 9.60461px 17.869px rgba(3, 8, 17, 0.0238443), 0px 5.38427px 10.0172px rgba(3, 8, 17, 0.02), 0px 2.85954px 5.32008px rgba(3, 8, 17, 0.0161557), 0px 1.18992px 2.21381px rgba(3, 8, 17, 0.0112458);
+// $shadow-blue: 0px 15px 30px rgba(44, 103, 144, 0.09);
+// $shadow-gray: 0px 8px 16px rgba(34, 19, 77, 0.07);
+// $shadow-conception: 0px 15px 30px rgba(44, 103, 144, 0.09);
+// ================ Shadow End ================
+
+
+// ================ Radius Start ================
+$radius-l: 32px;
+$radius-m: 16px;
+$radius-s: 8px;
+$radius-round: 200px;
+// ================ Radius End ================
+
+
+// ================ Responsive Start ================
+$laptop-l: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile-l: 425px;
+$mobile-m: 375px;
+$mobile-s: 320px;
+// ================ Responsive End ================
+
+
+// Размеры контейнера в этом файле 'scss/grid.scss'
+
+
+// ================ Other Start ================
+$ff-main: 'Inter', 'Roboto', sans-serif;
+$tr: .3s;
+$min-hover: 769px; // Минимальное разрешения экрана для hover-эффекта
+// ================ Other End ================

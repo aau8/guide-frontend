@@ -1,0 +1,14 @@
+.s-catalog__list {
+
+    & > *:not(:last-child) {
+        margin-bottom: 48px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: $mobile-l) {
+            margin-bottom: 24px;
+        }
+    }
+}

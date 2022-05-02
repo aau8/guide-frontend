@@ -1,0 +1,51 @@
+.icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: $tr;
+
+    @media (max-width: $mobile-l) {
+        width: 28px;
+        height: 28px;
+    }
+
+    &:hover {
+        
+        @media (min-width: $min-hover) {
+            background: brig-color(#f5f5f5, -3%);
+        }
+    }
+
+    &:active {
+        background: brig-color(#f5f5f5, -3%);
+        
+        @media (min-width: $min-hover) {
+            background: brig-color(#f5f5f5, -6%);
+        }
+
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+
+    & svg,
+    & img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 62%;
+        height: 62%;
+    }
+}
+
+.icon_fill {
+    background: #F5F5F5;
+}

@@ -1,0 +1,7 @@
+.s-header {
+    margin-bottom: 32px;
+
+    @media (max-width: $mobile-l) {
+        margin-bottom: 24px;
+    }
+}

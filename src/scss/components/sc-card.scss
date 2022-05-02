@@ -1,0 +1,124 @@
+.sc-card {
+    width: 100%;
+    background: #fff;
+    border: 1px solid $border-light;
+    border-radius: 4px;
+    transition: $tr;
+
+    &:hover {
+        
+        @media (min-width: $min-hover) {
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+        }
+    }
+} 
+
+.sc-card__header {
+    // min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sc-card__header-content {
+    flex: 1 0 auto;
+    padding: 15px 20px 15px 24px;
+
+    @media (max-width: $mobile-l) {
+        padding: 14px 16px 14px 16px;
+    }
+
+    &:hover {
+        
+        @media (min-width: $min-hover) {
+            
+            & .sc-card__title {
+                color: $accent;
+            }
+        }
+    }
+
+    &:active {
+        
+        @media (min-width: $min-hover) {
+            
+            & .sc-card__title {
+                color: brig-color($accent, 10%)
+            }
+        }
+            
+        & .sc-card__title {
+            color: $accent;
+        }
+    }
+}
+
+.sc-card__title {
+    font-size: 17px;
+    font-weight: 600;
+    color: $text-main;
+    transition: $tr;
+
+    @media (max-width: $mobile-l) {
+        font-size: 15px;
+    }
+}
+
+.sc-card__url {
+    font-size: 13px;
+    font-weight: 500;
+    color: $text-second;
+
+    @media (max-width: $mobile-l) {
+        font-size: 12px;
+    }
+}
+
+.sc-card__tools {
+    display: flex;
+    align-items: center;
+    padding: 15px 24px 15px 0;
+
+    @media (max-width: $mobile-l) {
+        padding: 14px 16px 14px 0;
+    }
+
+    &::before {
+        content: '';
+        width: 1px;
+        height: 27px;
+        background: $border-light;
+        margin: 0 20px;
+    }
+}
+
+.sc-card__validator {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-radius: 50%;
+        background: #bdbdbd;
+        pointer-events: none;
+    }
+
+    &._valid {
+
+        &::after {
+            background: $success;
+        }
+    }
+
+    &._not-valid {
+
+        &::after {
+            background: $error;
+        }
+    }
+}

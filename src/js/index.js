@@ -37,7 +37,7 @@ catalogList.innerHTML = Object.entries(catalog).map(([titleBlock, pages]) => {
 const validBtnElems = catalogList.querySelectorAll('.sc-card__validator')
 
 // Проверка на валидность раз в 30 минут
-if (new Date().getTime() - localStorage.getItem('lastTimeCheckValidHTML') > 1/5*60000 || (localStorage.getItem('dataValid') == null && localStorage.getItem('dataValid') == '')) {
+if (new Date().getTime() - localStorage.getItem('lastTimeCheckValidHTML') > 30*60000 || (localStorage.getItem('dataValid') == null && localStorage.getItem('dataValid') == '')) {
     console.log('прошло больше времени')
     
     localStorage.setItem('dataValid', '')

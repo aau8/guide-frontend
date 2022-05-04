@@ -21,6 +21,7 @@ export default {
   output: {
     path: resolve(__dirname, 'dist'),
     filename: 'js/bundle.js',
+    // clean: true,
   },
   devServer: {
     port: 'auto', // Порт сервера
